@@ -1,6 +1,5 @@
---find-links wheelhouse
-django<2.2,>=2.1.0
+django<1.11
 setuptools
-pyodbc
-django-pyodbc-azure
-waitress
+pyodbc>3.0
+django-pyodbc-azure==1.10.0.1
+waitress==1.0.1
