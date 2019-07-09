@@ -25,7 +25,7 @@ SECRET_KEY = 'f#a0f9-$&7^bym4d4vyxre41glv^&k4q+k#2@f4l=eh_7lethv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mypollapp2.azurewebsites.net',]
 
 
 # Application definition
