@@ -25,10 +25,6 @@ background-size:50%; ">
                 <form  class="bg-gradient-secondary" method="POST" action="/polls/next" enctype="multipart/form-data" >
                     {% csrf_token %} 
                     <div class="form-label-group mb-4">
-                        <input type="text" name="idi" class="form-control" placeholder="Enter Your Name" 
-                            required>
-                    </div>
-                    <div class="form-label-group mb-4">
                         <input type="file" name="myImage" class="form-control" 
                             required>
                     </div>
