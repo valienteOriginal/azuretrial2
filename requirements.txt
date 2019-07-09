@@ -3,3 +3,6 @@ setuptools
 pyodbc
 django-pyodbc-azure
 waitress
+keras
+numpy
+cv2
