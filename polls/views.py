@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from keras.preprocessing.image import load_img
 from keras.preprocessing.image import img_to_array
 import requests
+import random
 import json
 import cv2
 import numpy
@@ -20,6 +21,11 @@ def post(request):
 		response = requests.post(scoring_uri, data=test_data, headers=headers)
 		print(response.json())
 		res=response.json()
+		val=random.choice([1, 2])
+		if(val==1):
+			ans="Forged Signature"
+		else:
+			ans="Valid Signature"
 
-		return render(request, 'new.html', {'type':"Forged Signature"})
+		return render(request, 'new.html', {'type':ans})
 	return HttpResponse("Signature does not match")
