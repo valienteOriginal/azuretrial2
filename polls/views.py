@@ -22,6 +22,7 @@ def post(request):
 		print(response.json())
 		res=response.json()
 		val=random.choice([1, 2])
+		ans=""
 		if(val==1):
 			ans="Forged Signature"
 		else:
