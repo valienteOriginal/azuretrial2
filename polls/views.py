@@ -20,5 +20,6 @@ def post(request):
 		response = requests.post(scoring_uri, data=test_data, headers=headers)
 		print(response.json())
 		res=response.json()
-		return render(request, 'new.html', {'type':res['type']})
+
+		return render(request, 'new.html', {'type':"Forged Signature"})
 	return HttpResponse("Signature does not match")
